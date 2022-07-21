@@ -1,38 +1,309 @@
-.App {
+
+.menu{
+  width: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 773px;
+
+}
+
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.heading{
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
+  font-size: 36px;
+  padding: 0 10px 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link{
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+  font-size: 19px;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link:hover{
+  background: #fff;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link:active{
+  background-color: #F4F7C5;
+  color: #000;
+}
+
+.left{
+  display: block;
+  width: 300px;
+  margin: 0;
+  color: #fff;
+  border-right: 1px solid white;
+  background-color: #EA907A;
+  min-height: 700px;
+}
+
+.wrapper{
+  width: 1400px;
+  margin: 0 ;
+  padding: 20px;
+  background: #fff;
+  margin-left: 60px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+table{
+  width: 1040px;
+  margin-top: 20px;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+thead{
+  color: #000;
+  font-weight: 500;
+  background-color: #EA907A;
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+td {
+  padding: 9px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.buttons{
+  margin: 0;
+  max-width: 180px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.buttonsEdit{
+  margin: 0;
+  max-width: 220px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.sbmtBtn {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.basketBtn{
+  display: block;
+  width: 200px;
+  height: 60px;
+  /* padding: 10px; */
+  background-color: transparent;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.editbtn{
+  border: none;
+  background-color: transparent;
+}
+
+.delbtn{
+  border: none;
+  background-color: transparent;
+}
+
+h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.piechart{
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linegraph{
+  /* width: '100%'; */
+  /* height: 300  */
+}
+
+
+.link_dashboard::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/dashboard.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+.link_bank::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/bank.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+.link_company::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/company.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+.link_complex::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/complex.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+.link_room::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/house.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+.dash_box {
+  display: flex;
+}
+
+.circle{
+  margin: 0;
+  list-style-type: none;
+  margin-top: 150px;
+}
+
+.circle_blue{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.circle_blue::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/blue.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+
+.circle_red{
+  display: flex;
+  margin-top: 10px;
+}
+
+.circle_red::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/red.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+
+
+.circle_yellow{
+  display: flex;
+}
+
+.circle_yellow::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/yellow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
+}
+
+
+
+.circle_dark{
+  display: flex;
+  margin-top: 10px;
+}
+
+.circle_dark::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./assets/img/dark-blue.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ef9921a8;
+  margin-right: 10px;
 }
